@@ -7,6 +7,7 @@ driver = webdriver.Chrome(PATH)
 
 driver.get("https://youtube.com")
 elem = driver.find_element_by_name("search_query")
+elem.send_keys("uwu copypasta", Keys.RETURN)
 
 elem2 = driver.find_element_by_id("dismissible")
 elem2.click()
